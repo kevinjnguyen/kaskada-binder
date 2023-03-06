@@ -1,5 +1,6 @@
 # Start off with the base image as  Python 3.9
-FROM jupyter/scipy-notebook:python-3.10.9
+FROM python:3.9-slim
+RUN pip install --no-cache notebook jupyterlab
 
 USER jovyan
 WORKDIR $HOME
