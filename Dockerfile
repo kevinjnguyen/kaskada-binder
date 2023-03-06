@@ -1,6 +1,7 @@
 # Start off with the base image as  Python 3.9
 FROM jupyter/scipy-notebook:python-3.10.9
 
+USER root
 # Create user with a home directory
 ARG NB_USER
 ARG NB_UID
