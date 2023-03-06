@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 
 # Copy over the sample notebook and dataset
 COPY ["./Hello World Example.ipynb", "Hello World Example.ipynb"]
-COPY ["./dataset.csv", "dataset1.csv"]
+COPY ["./dataset1.csv", "dataset1.csv"]
