@@ -1,7 +1,5 @@
 # Start off with the base image as  Python 3.9
-FROM python:3.9-slim
-RUN pip install --no-cache notebook jupyterlab
-ENV HOME=/tmp
+FROM jupyter/scipy-notebook:python-3.10.9
 
 # Create user with a home directory
 ARG NB_USER
