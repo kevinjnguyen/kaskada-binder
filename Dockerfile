@@ -1,6 +1,7 @@
 # Start off with the base image as  Python 3.9
 FROM python:3.9-slim
 RUN pip install --no-cache notebook jupyterlab
+ENV HOME=/tmp
 
 # Install the requirements (mainly Kaskada)
 COPY ["./requirements.txt", "requirements.txt"]
